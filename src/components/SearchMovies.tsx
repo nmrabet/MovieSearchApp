@@ -8,8 +8,7 @@ export default function SearchMovies() {
 
   const searchMovies = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    console.log("submitted!");
-    const query = "Jurassic Park";
+   
     const url = `https://api.themoviedb.org/3/search/movie?api_key=78a45bdd567d01f68ab740cc013ce05a&language=en-US&query=${query}&page=1&include_adult=false`;
 
     fetch(url)
